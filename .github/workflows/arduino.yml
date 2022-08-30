@@ -1,0 +1,13 @@
+name: Arduino CI
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: Arduino-CI/action@33a74cc06b069e1e71b53f4b648e3a93d1cae6e4
